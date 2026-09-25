@@ -11,117 +11,219 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- Encabezado principal de la página -->
     <header class="site-header">
       <nav class="nav container" aria-label="Navegación principal">
-        <div class="brand">Fernando Lillo</div>
+        <div class="brand" aria-label="Fernando Lillo">Fernando Lillo</div>
         <div class="nav-links">
           <a href="#about">Sobre mí</a>
-          <a href="#work">Lo que he hecho</a>
-          <a href="#likes">Me gusta</a>
+          <a href="#skills">Aptitudes</a>
+          <a href="#projects">Proyectos</a>
+          <a href="#education">Formación</a>
+          <a href="#goals">Objetivos</a>
           <a href="#contact">Contacto</a>
         </div>
       </nav>
 
       <div class="hero container">
-        <div class="hero-text">
+        <div class="hero-text reveal">
           <p class="eyebrow">2º ASIR · IES Francisco de Quevedo</p>
-          <h1>Fernando Lillo</h1>
-          <p class="tagline">“Aprendiendo cada día para construir soluciones y crecer en tecnología.”</p>
-          <a href="#about" class="btn btn-primary">Conóceme</a>
+          <h1>Aprendo, construyo y me convierto en profesional del futuro.</h1>
+          <p class="tagline">
+            Soy Fernando Lillo, estudiante de ASIR con pasión por la tecnología, la seguridad
+            informática y la resolución de problemas reales con creatividad y constancia.
+          </p>
+          <div class="hero-actions">
+            <a href="#about" class="btn btn-primary">Conóceme</a>
+            <a href="#projects" class="btn btn-secondary">Ver proyectos</a>
+          </div>
+
+          <div class="stats" aria-label="Estadísticas personales">
+            <div>
+              <strong>2º</strong>
+              <span>ASIR</span>
+            </div>
+            <div>
+              <strong>20+</strong>
+              <span>prácticas y tareas</span>
+            </div>
+            <div>
+              <strong>100%</strong>
+              <span>motivación</span>
+            </div>
+          </div>
         </div>
 
-        <div class="hero-card" aria-label="Tarjeta de presentación">
-          <div class="card-badge">Marca personal</div>
+        <div class="hero-card reveal" aria-label="Tarjeta de presentación">
+          <img
+            class="dog-photo"
+            src="https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&w=900&q=80"
+            alt="Perro blanco raza bodeguero con antifaz"
+          />
+          <div class="card-badge">Perfil</div>
           <h2>Cybersecurity & Tech</h2>
           <p>
-            Soy Fernando Lillo, estudiante de ASIR con interés en la seguridad informática,
-            la automatización y la resolución de problemas reales con tecnología.
+            Me interesa la seguridad informática, la administración de sistemas y el desarrollo,
+            siempre buscando mejorar mi capacidad técnica y mi forma de pensar.
           </p>
+          <ul class="hero-list">
+            <li>⚡ Automatización</li>
+            <li>🔒 Seguridad</li>
+            <li>💻 Desarrollo web</li>
+            <li>📚 Aprendizaje continuo</li>
+          </ul>
         </div>
       </div>
     </header>
 
-    <!-- Sección Sobre mí -->
     <main>
       <section id="about" class="section container">
-        <div class="section-heading">
+        <div class="section-heading reveal">
           <p class="section-kicker">Sobre mí</p>
-          <h2>Me apasiona aprender y crear</h2>
+          <h2>Me encanta descubrir cómo funciona la tecnología y cómo mejorarla.</h2>
         </div>
 
         <div class="about-grid">
-          <article class="about-card">
+          <article class="about-card reveal">
+            <div class="icon">01</div>
             <h3>Quién soy</h3>
             <p>
-              Soy Fernando Lillo, estudiante del ciclo de 2º ASIR del IES Francisco de Quevedo.
-              Me gusta explorar el mundo de la informática desde la parte técnica y la lógica,
-              buscando siempre mejorar y aprender nuevas herramientas.
+              Soy Fernando Lillo, estudiante del ciclo formativo de ASIR en el IES Francisco de
+              Quevedo. Me gusta explorar la lógica detrás de los sistemas, la red y los programas.
             </p>
           </article>
 
-          <article class="about-card">
+          <article class="about-card reveal">
+            <div class="icon">02</div>
             <h3>Mi enfoque</h3>
             <p>
-              Me interesa el desarrollo, la administración de sistemas, la seguridad y todo aquello
-              que me permita comprender cómo funcionan las tecnologías que usamos cada día.
+              Me interesa entender cómo se construyen y protegen las soluciones digitales, tanto a
+              nivel técnico como a nivel de análisis y estrategia.
             </p>
           </article>
 
-          <article class="about-card accent">
-            <h3>Objetivo</h3>
+          <article class="about-card accent reveal">
+            <div class="icon">03</div>
+            <h3>Mi meta</h3>
             <p>
-              Quiero formarme como técnico de ciberseguridad, combinando conocimientos de redes,
-              sistemas y análisis para proteger entornos digitales.
+              Quiero formarme como profesional en ciberseguridad y administración de sistemas,
+              combinando conocimientos de redes, programación y seguridad.
             </p>
           </article>
         </div>
       </section>
 
-      <!-- Sección Lo que he hecho -->
-      <section id="work" class="section section-dark">
+      <section id="skills" class="section section-dark">
         <div class="container">
-          <div class="section-heading">
-            <p class="section-kicker">Lo que he hecho</p>
-            <h2>Proyectos y experiencias</h2>
+          <div class="section-heading reveal">
+            <p class="section-kicker">Aptitudes</p>
+            <h2>Las áreas en las que estoy creciendo cada día.</h2>
+          </div>
+
+          <div class="skills-wrap reveal">
+            <span>Python</span>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>Redes</span>
+            <span>Sistemas</span>
+            <span>Seguridad</span>
+            <span>Automatización</span>
+            <span>Resolución de problemas</span>
+            <span>Curiosidad técnica</span>
+            <span>Trabajo en equipo</span>
+            <span>Responsabilidad</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section container">
+        <div class="section-heading reveal">
+          <p class="section-kicker">Proyectos</p>
+          <h2>Actividades y trabajos que me han ayudado a desarrollar mis habilidades.</h2>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card reveal">
+            <div class="project-top">
+              <span class="tag">Scripting</span>
+              <span class="project-year">2024</span>
+            </div>
+            <h3>Scripts y automatización</h3>
+            <p>
+              He trabajado con pequeños programas y tareas automatizadas para agilizar procesos y
+              comprender mejor la lógica detrás del código.
+            </p>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-top">
+              <span class="tag">Web</span>
+              <span class="project-year">2025</span>
+            </div>
+            <h3>Diseño y maquetación</h3>
+            <p>
+              He aprendido a diseñar páginas con HTML, CSS y JavaScript, enfocándome en un estilo
+              limpio, moderno y fácil de navegar.
+            </p>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-top">
+              <span class="tag">Tecnología</span>
+              <span class="project-year">Actual</span>
+            </div>
+            <h3>Aprendizaje práctico</h3>
+            <p>
+              Estoy aplicando lo aprendido en entornos reales, repasando conceptos y construyendo
+              proyectos personales para crecer como técnico y futuro profesional.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="education" class="section section-dark">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="section-kicker">Formación</p>
+            <h2>Mi camino académico y profesional.</h2>
           </div>
 
           <div class="timeline">
-            <article class="timeline-item">
-              <span class="year">2024</span>
-              <div>
-                <h3>Trabajos y prácticas en tecnología</h3>
-                <p>
-                  He trabajado con herramientas y conceptos relacionados con sistemas, redes y
-                  administración básica, ampliando mi conocimiento práctico en entornos informáticos.
-                </p>
-              </div>
-            </article>
-
-            <article class="timeline-item">
-              <span class="year">2025</span>
-              <div>
-                <h3>Aprendizaje continuo</h3>
-                <p>
-                  He desarrollado habilidades en programación, scripting y resolución de problemas,
-                  aplicando la teoría a pequeños ejercicios y proyectos personales.
-                </p>
-              </div>
-            </article>
-
-            <article class="timeline-item">
+            <article class="timeline-item reveal">
               <span class="year">Actual</span>
               <div>
-                <h3>Interés profesional</h3>
+                <h3>2º ASIR</h3>
                 <p>
-                  Estoy orientando mi aprendizaje hacia la ciberseguridad, con especial interés por la
-                  protección de sistemas, la gestión de riesgos y el análisis de amenazas.
+                  Estoy cursando el segundo curso de Administración de Sistemas Informáticos en Red,
+                  profundizando en redes, sistemas, seguridad y servicios.
+                </p>
+              </div>
+            </article>
+
+            <article class="timeline-item reveal">
+              <span class="year">2024</span>
+              <div>
+                <h3>Fundamentos</h3>
+                <p>
+                  Empecé a reforzar mis bases en programación, hardware, software y administración,
+                  lo que me ayudó a comprender mejor el entorno informático.
+                </p>
+              </div>
+            </article>
+
+            <article class="timeline-item reveal">
+              <span class="year">Futuro</span>
+              <div>
+                <h3>Especialización</h3>
+                <p>
+                  Mi objetivo es seguir creciendo en ciberseguridad, redes y administración para
+                  prepararme para entrar al mundo laboral con solidez.
                 </p>
               </div>
             </article>
@@ -129,39 +231,29 @@
         </div>
       </section>
 
-      <!-- Sección Me gusta -->
-      <section id="likes" class="section container">
-        <div class="section-heading">
-          <p class="section-kicker">Me gusta</p>
-          <h2>Lo que disfruto en mi tiempo libre</h2>
+      <section id="goals" class="section container">
+        <div class="section-heading reveal">
+          <p class="section-kicker">Objetivos</p>
+          <h2>Qué quiero conseguir en este camino.</h2>
         </div>
 
-        <div class="likes-grid">
-          <div class="like-item">
-            <span>💻</span>
-            <h3>Programar</h3>
-            <p>Explorar nuevas soluciones y aprender a automatizar tareas.</p>
+        <div class="goals-grid">
+          <div class="goal-card reveal">
+            <h3>1. Mejorar mis competencias</h3>
+            <p>Aprender cada vez más sobre redes, sistemas, seguridad y programación práctica.</p>
           </div>
-          <div class="like-item">
-            <span>🔐</span>
-            <h3>Ciberseguridad</h3>
-            <p>Entender cómo proteger sistemas y datos en un entorno digital.</p>
+          <div class="goal-card reveal">
+            <h3>2. Crear proyectos propios</h3>
+            <p>Desarrollar soluciones reales y útiles que me permitan aplicar todo lo que estudio.</p>
           </div>
-          <div class="like-item">
-            <span>📚</span>
-            <h3>Aprender</h3>
-            <p>Buscar conocimiento constante para crecer en tecnología y en mi futuro profesional.</p>
-          </div>
-          <div class="like-item">
-            <span>🎯</span>
-            <h3>Superarme</h3>
-            <p>Me motiva enfrentar retos y mejorar cada día con disciplina.</p>
+          <div class="goal-card reveal">
+            <h3>3. Trabajar en tecnología</h3>
+            <p>Prepararme para un futuro profesional sólido en administración y ciberseguridad.</p>
           </div>
         </div>
       </section>
     </main>
 
-    <!-- Pie de página con contacto -->
     <footer id="contact" class="site-footer">
       <div class="container footer-content">
         <div>
@@ -170,11 +262,12 @@
         </div>
 
         <div class="contact-links">
-          <a href="mailto:tuemail@example.com">tuemail@example.com</a>
-          <a href="https://github.com/tuusuario" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="mailto:pesquisas@gmail.com">pesquisas@gmail.com</a>
+          <a href="https://github.com/Fernandolil" target="_blank" rel="noreferrer">GitHub</a>
           <a href="https://www.linkedin.com/in/tuusuario" target="_blank" rel="noreferrer">LinkedIn</a>
         </div>
       </div>
+      <p class="copyright">© <span id="year"></span> Fernando Lillo. Todos los derechos reservados.</p>
     </footer>
 
     <script src="script.js"></script>
